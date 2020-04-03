@@ -47,7 +47,3 @@ $('#search-input').on('keyup', function (event) {
         searchMovie();
     }
 })
-
-$('#movie-list').on('click', '.detail', function () {
-    console.log("Bismillah");
-})
