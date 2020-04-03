@@ -19,7 +19,7 @@ function searchMovie() {
                             <div class="card-body">
                                 <h5 class="card-title"> ${data.Title} </h5>
                                 <h6 class="card-subtitle mb-2 text-muted"> ${data.Year} </h6>
-                                <h5> <a href="#" class="badge badge-primary">See Details</a> </h5>
+                                <h5> <a href="#" id="detail" class="badge badge-primary" data-id="${data.imdbID}">See Details</a> </h5>
                             </div>
                         </div>
                     `);
@@ -46,4 +46,8 @@ $('#search-input').on('keyup', function (event) {
     if (event.keyCode == 13) {
         searchMovie();
     }
+})
+
+$('#movie-list').on('click', '.detail', function () {
+    console.log("Bismillah");
 })
